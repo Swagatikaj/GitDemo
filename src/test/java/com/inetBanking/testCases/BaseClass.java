@@ -18,6 +18,7 @@ public class BaseClass {
 	        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");	       
 	        driver = new ChromeDriver();
 	        driver.manage().window().maximize();
+	        System.out.println("Maximizing the Browser");
 	        return driver;
 	    }
 	 
@@ -26,6 +27,7 @@ public class BaseClass {
 	public void tearDown()
 	{	
 	driver.quit();
+	System.out.println("Quitting the browser");
 	}
 	
 }
