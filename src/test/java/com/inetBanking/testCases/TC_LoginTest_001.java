@@ -29,10 +29,16 @@ public class TC_LoginTest_001 extends BaseClass
 			assertTrue(false);
 		}
 	
+		//Delete this all prints later and then commit again
 		System.out.println("PostJira2");
 		System.out.println("PostJira3");
 		System.out.println("PostJira4");
 		System.out.println("PostJira5");
+		
+		System.out.println("PostJira1");
+		System.out.println("PostJira2");
+		System.out.println("PostJira3");
+		System.out.println("PostJira4");
 	}
 	
 }

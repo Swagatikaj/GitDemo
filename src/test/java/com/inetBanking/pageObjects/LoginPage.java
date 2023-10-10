@@ -25,6 +25,16 @@ public class LoginPage {
 	@FindBy(name="btnLogin")
 	WebElement btnLogin;
 	
+	//Delete this 3 element later and then commit again
+	@FindBy(name="uid")
+	WebElement txtUserName1;
+	
+	@FindBy(name="password")
+	WebElement txtPassword1;
+	
+	@FindBy(name="btnLogin")
+	WebElement btnLogin1;
+	
 	
 	public void setUserName(String uname)
 	{
@@ -37,6 +47,22 @@ public class LoginPage {
 	}
 	
 	public void clickSubmit()
+	{
+		btnLogin.click();
+	}
+	
+	//Delete this 3 methods later and then commit again
+	public void setUserName1(String uname)
+	{
+		txtUserName.sendKeys(uname);
+	}
+	
+	public void setPassword1(String password)
+	{
+		txtPassword.sendKeys(password);
+	}
+	
+	public void clickSubmit1()
 	{
 		btnLogin.click();
 	}

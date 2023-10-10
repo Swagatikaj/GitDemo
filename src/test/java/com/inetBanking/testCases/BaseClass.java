@@ -18,13 +18,26 @@ public class BaseClass {
 	        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");	       
 	        driver = new ChromeDriver();
 	        driver.manage().window().maximize();
-	        System.out.println("Maximizing the Browser");
+	        
+	      //Delete this 4 print later and then commit again
+	        System.out.println("Maximizing the Browser");System.out.println("PostJira2");
+			System.out.println("PostJira1");
+			System.out.println("PostJira2");
+			System.out.println("PostJira3");
+			
 	        return driver;
 	    }
 	 
 	
 	@AfterClass
 	public void tearDown()
+	{	
+	driver.quit();
+	System.out.println("Quitting the browser");
+	}
+	
+	//Delete this methods later and then commit again
+	public void tearDownMethod()
 	{	
 	driver.quit();
 	System.out.println("Quitting the browser");
